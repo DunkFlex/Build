@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gacha Build Simulator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body bgcolor="black" id="bg">
+
+    <center>
+        <h1>Heavy Ship Gacha</h1>
+    </center>
+    <div style="width:100%;overflow:auto;">
+        <div style="float:left; width: 50%">
+            <center>
+                <table>
+                    <tr>
+                        <th>Rarity</th>
+                        <th>Rates</th>
+                    </tr>
+                    <tr>
+                        <td>Common</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>Rare</td>
+                        <td>51%</td>
+                    </tr>
+                    <tr>
+                        <td>Elite</td>
+                        <td>12%</td>
+                    </tr>
+                    <tr>
+                        <td>Super Rare</td>
+                        <td>7%</td>
+                    </tr>
+                </table>
+                <br />
+
+                <table>
+                    <tr>
+                        <td><button onclick="pull(1)">Build Once</button></td>
+                        <td><button onclick="pull(3)">Build Until Super Rare</button></td>
+                    </tr>
+                </table>
+
+                <br />
+                <table>
+                    <tr>
+                        <th colspan="2">Results</th>
+                    </tr>
+                    <tr>
+                        <td>Common</td>
+                        <td id="Common">0</td>
+                    </tr>
+                    <tr>
+                        <td>Rare</td>
+                        <td id="Rare">0</td>
+                    </tr>
+                    <tr>
+                        <td>Elite</td>
+                        <td id="Elite">0</td>
+                    </tr>
+                    <tr>
+                        <td>Super Rare</td>
+                        <td id="Super">0</td>
+                    </tr>
+                    <tr>
+                        <td>Number of Pulls</td>
+                        <td id="numPulls">0</td>
+                    </tr>
+                </table>
+                <br />
+                <button onclick="clearResults()">Clear Results</button>
+            </center>
+        </div>
+        <div style="float:right;">
+
+            <table width="600">
+                <tr>
+                    <td>
+                        <p align="center">
+                            Whale away you gacha freaks
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Suppose that it costs 1500 gold and 2 cubes per build.
+                        </p>
+                        <p id="priceTotal">
+                            You rolled 0 times, spending <strong> 0 gold </strong> and <strong>0 cubes</strong>!
+               
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+   
+
+
+    <div id="bottom">
+        <p style="text-align:left;">
+            <font color="white">
+                Created by Jacky Chen
+                Modified by matsu watashi tiktok
+                <span style="float:right;">June 8, 2018</span>
+            </font>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
